@@ -1,5 +1,5 @@
 ---
-title: bgIndocer
+title: background
 date: 2017-03-26 17:10:09
 tags:
 ---
