@@ -1,3 +1,0 @@
-#windows
-node_modules
-public
