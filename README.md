@@ -9,7 +9,7 @@ Github地址：https://github.com/feYqb
 
 - 翻墙
 - 注册Github账号 
-- Node.js环境
+- Node.js环境 (版本不能太旧)
 - Git
 - **本地搭建Hexo静态博客**
 - **Markdown语法**
@@ -27,31 +27,37 @@ https://xuanwo.org/2015/03/26/hexo-intor/
 仓库地址：https://github.com/feYqb/feyqbRepo
 本地项目目录下执行命令：
 
-- npm install hexo--cli-g
+-  npm install -g hexo-cli
 - npm install hexo --save
 - hexo -v
-- hexo init
+- npm install
 - hexo g
-- hexo d
 - hexo s
 
+npm install将会自动安装你需要的组件
 完成本地初始化博客
 本地访问：localhost:4000
+更换端口或是在执行时遇到了 EADDRINUSE 错误
+$ hexo server -p 5000
+
 
 ##项目目录介绍
+###feyqbRepo
 
 - scaffolds
 - **source** 源文件存储目录
  + _posts
-     * nodejs-2017-03-21-schedule.md
-     * reactjs-2017-03-28-redux.md
-     * 公告-2017-03-26-background.md
+     * schedule.md
+     * redux.md
+     * background.md
  + img
 - themes
+- public
 - .gitignore
-- .npmignore
 - _config
 - package.json
+### feyqb.github.io
+部署成功后的public目录
 
 ## 仓库介绍
  - feyqbRepo：博客源码
@@ -68,27 +74,39 @@ hexo new name
 ```
 
 所有文章以md形式保存在Hexo目录下的source/_post文件夹中。
-或者可以直接在该目录下新建md类型的文档，就能在执行hexo g的时候别渲染。新建的文章需要添加一些yml信息，如下：
+或者可以直接在该目录下新建md类型的文档，就能在执行hexo g的时候渲染。新建的文章需要添加一些yml信息，如下：
 
 ```
 ---
-title: reactjs-2017-03-28-redux		//标题
+title:Redux		//标题
 date: 2017-03-21 19:11:05  //编辑这篇文章的时间
 tags:				//文章tag
-- react框架
+- React框架
 - RN技术
-- node技术
+- Node技术
 ---
 ```
+**慎用 hexo d **
+hexo deployed部署本地博客到github的命令
 
 ### 标题规范
 
 **所属线-xx-xx-xx-name**
 
 	nodejs-2017-03-21-schedule.md
+	
+### 提交规范
+node_modules
+public
+db.json 文件不需要提交
+因此注意.gitignore文件存在的必要性
+
 ### 参考文档
 markdown语法：http://www.jianshu.com/p/q81RER
+
 Git使用指南：
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+
+hexo官方文档：https://hexo.io/zh-cn/docs/
 
 
