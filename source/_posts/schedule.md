@@ -5,6 +5,8 @@ tags:
 - react框架
 - RN技术
 - node技术
+categories:
+- node
 ---
 ## node线分享书籍
 1. **《了不起的nodejs》**：分10个课时

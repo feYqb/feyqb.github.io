@@ -3,6 +3,8 @@ title: redux
 date: 2017-03-28 18:06:37
 tags:
 - RN技术
+categories:
+- react
 ---
 # redux
 

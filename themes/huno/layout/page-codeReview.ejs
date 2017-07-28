@@ -1,0 +1,69 @@
+<%
+var post = page;
+%>
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title"><%= post.title %></h1>
+
+    <section id="post-content" class="article-content post">
+        <%- post.content %>
+    </section>
+
+
+  </header>
+
+</article>
+
+<div class="archive-meta">
+
+<% if (site.categories.length){ %>
+
+    <div class="categorieslist">
+        <% site.categories.sort('name').each(function(item){ %>
+          <% if(item.posts.length && item.name==='codereview'){ %>
+
+
+            <div class="main-post-list">
+              <ol class="post-list">
+              
+              <% item.posts.each(function(post, i) { %>
+              <li>
+
+                <h2 class="post-list__post-title post-title">
+                  <a href="<%- config.root %><%- post.path %>" title="link to <%= post.title %>"><%= post.title %></a>
+                </h2>
+
+                <div class="post-list__meta">
+
+                  <time datetime="<%= date(post.date, config.date_format) %>" class="post-list__meta--date date"><%= date(post.date, config.date_format) %></time> 
+                </div>
+
+                <div class="excerpt">
+                  <% if (post.description) { %>
+                    <%- post.description %>
+                  <% } else if (post.excerpt) { %>
+                    <%- post.excerpt %>
+                  <% } %>
+                </div>
+
+                <hr class="post-list__divider" />
+              </li>
+              <% }); %>
+            </ol>
+
+            <%- partial('pagination') %>
+
+          </div>
+
+
+
+          <% } %>
+        <% }); %>
+     </div>
+<% } %>
+
+
+</div>
