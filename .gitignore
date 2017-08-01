@@ -1,4 +1,4 @@
-node_modules/
-public/
-debug.log
-db.json
+/node_modules
+/public
+/debug.log
+/db.json
