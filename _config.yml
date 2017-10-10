@@ -79,5 +79,5 @@ theme: huno
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:feyqb/feyqb.github.io
+  repo: git@git.yqb.com:feyqb/feyqb.gitlab.io
   # repo: git@github.com:feYqb/feyqb.github.io.git
