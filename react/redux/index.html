@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      redux | feYqb 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="feYqb">
+    
+    
+
+    <meta name="description" content="redux推荐文档 redux 生态系统:http://cn.redux.js.org/docs/introduction/Ecosystem.html 中文官方文档: http://cn.redux.js.org/index.html 英文官方文档: http://redux.js.org/ github精简教程: https://github.com/react-guide/redux-tut">
+<meta name="keywords" content="RN技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="redux | feYqb">
+<meta property="og:url" content="http://yoursite.com/react/redux/index.html">
+<meta property="og:site_name" content="feYqb">
+<meta property="og:description" content="redux推荐文档 redux 生态系统:http://cn.redux.js.org/docs/introduction/Ecosystem.html 中文官方文档: http://cn.redux.js.org/index.html 英文官方文档: http://redux.js.org/ github精简教程: https://github.com/react-guide/redux-tut">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/img/ReduxFlow.png">
+<meta property="og:updated_time" content="2017-09-29T01:42:50.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="redux | feYqb">
+<meta name="twitter:description" content="redux推荐文档 redux 生态系统:http://cn.redux.js.org/docs/introduction/Ecosystem.html 中文官方文档: http://cn.redux.js.org/index.html 英文官方文档: http://redux.js.org/ github精简教程: https://github.com/react-guide/redux-tut">
+<meta name="twitter:image" content="http://yoursite.com/img/ReduxFlow.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">feYqb</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          never give up reading!
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+                
+                <li class="navigation__item"><a href="/codeReview" title="" class="">codeReview</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">redux</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-03-28" class="post-meta__date date">2017-03-28</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/react/">react</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/RN技术/">RN技术</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h1 id="redux"><a href="#redux" class="headerlink" title="redux"></a>redux</h1><h2 id="推荐文档"><a href="#推荐文档" class="headerlink" title="推荐文档"></a>推荐文档</h2><ol>
+<li>redux 生态系统:<a href="http://cn.redux.js.org/docs/introduction/Ecosystem.html" target="_blank" rel="external">http://cn.redux.js.org/docs/introduction/Ecosystem.html</a></li>
+<li>中文官方文档: <a href="http://cn.redux.js.org/index.html" target="_blank" rel="external">http://cn.redux.js.org/index.html</a></li>
+<li>英文官方文档: <a href="http://redux.js.org/" target="_blank" rel="external">http://redux.js.org/</a></li>
+<li>github精简教程: <a href="https://github.com/react-guide/redux-tutorial-cn#redux-tutorial" target="_blank" rel="external">https://github.com/react-guide/redux-tutorial-cn#redux-tutorial</a></li>
+</ol>
+<h2 id="什么是redux"><a href="#什么是redux" class="headerlink" title="什么是redux"></a>什么是redux</h2><ol>
+<li>随着 JavaScript 单页应用开发日趋复杂，JavaScript 需要管理比任何时候都要多的 state （状态）。</li>
+<li><p>通过限制更新发生的时间和方式，Redux 试图让 state 的变化变得可预测。</p>
+</li>
+<li><p>Redux是JS状态容器.提供可预测化的状态管理. </p>
+</li>
+</ol>
+<h2 id="三大原则"><a href="#三大原则" class="headerlink" title="三大原则"></a>三大原则</h2><ol>
+<li><p>单一数据源</p>
+<ul>
+<li>整个应用的 state 被储存在一棵 object tree 中，并且这个 object tree 只存在于唯一一个 store 中。</li>
+</ul>
+</li>
+<li><p>State 是只读的</p>
+<ul>
+<li>惟一改变 state 的方法就是触发 action，action 是一个用于描述已发生事件的普通对象。</li>
+</ul>
+</li>
+<li><p>使用纯函数来执行修改</p>
+<ul>
+<li>为了描述 action 如何改变 state tree ，你需要编写 reducers。</li>
+</ul>
+</li>
+</ol>
+<h2 id="现实案例"><a href="#现实案例" class="headerlink" title="现实案例"></a>现实案例</h2><p>公司项目代码trunk管理</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">…</th>
+<th style="text-align:center">对应关系</th>
+<th style="text-align:center">职责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">我们</td>
+<td style="text-align:center">action</td>
+<td style="text-align:center">表达修改trunk   代码的意图</td>
+</tr>
+<tr>
+<td style="text-align:center">双星级想出来的修改的方法</td>
+<td style="text-align:center">reducers</td>
+<td style="text-align:center">改变公司代码</td>
+</tr>
+<tr>
+<td style="text-align:center">双星级</td>
+<td style="text-align:center">combine reducer</td>
+<td style="text-align:center">reducers集合</td>
+</tr>
+<tr>
+<td style="text-align:center">trunk</td>
+<td style="text-align:center">store</td>
+<td style="text-align:center">存储公司代码状态的地方</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><ul>
+<li>表达我们修改store的意图</li>
+<li>只是描述了有事情发生了这一事实，并没有指明应用如何更新 state</li>
+<li>store 数据的唯一来源</li>
+<li>一般来说你会通过 store.dispatch() 将 action 传到 store    </li>
+<li>Action 创建函数<ul>
+<li>在 Redux 中的 action 创建函数只是简单的返回一个 action<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addTodo</span>(<span class="params">text</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    type: ADD_TODO,</div><div class="line">    text</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>Action.js<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment"> * action 类型</span></div><div class="line"><span class="comment"> */</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">const</span> ADD_TODO = <span class="string">'ADD_TODO'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">const</span> TOGGLE_TODO = <span class="string">'TOGGLE_TODO'</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">const</span> SET_VISIBILITY_FILTER = <span class="string">'SET_VISIBILITY_FILTER'</span></div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment"> * 其它的常量</span></div><div class="line"><span class="comment"> */</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">const</span> VisibilityFilters = &#123;</div><div class="line">  SHOW_ALL: <span class="string">'SHOW_ALL'</span>,</div><div class="line">  SHOW_COMPLETED: <span class="string">'SHOW_COMPLETED'</span>,</div><div class="line">  SHOW_ACTIVE: <span class="string">'SHOW_ACTIVE'</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment"> * action 创建函数</span></div><div class="line"><span class="comment"> */</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">addTodo</span>(<span class="params">text</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123; <span class="attr">type</span>: ADD_TODO, text &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">toggleTodo</span>(<span class="params">index</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123; <span class="attr">type</span>: TOGGLE_TODO, index &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">setVisibilityFilter</span>(<span class="params">filter</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123; <span class="attr">type</span>: SET_VISIBILITY_FILTER, filter &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Reducer"><a href="#Reducer" class="headerlink" title="Reducer"></a>Reducer</h2><ul>
+<li>Action 只是描述了有事情发生了这一事实，并没有指明应用如何更新 state。而这正是 reducer 要做的事情。</li>
+<li>Action 处理<ul>
+<li>reducer 就是一个纯函数，接收旧的 state 和 action，返回新的 state。</li>
+</ul>
+</li>
+<li><p>不要直接修改 state。 使用 Object.assign() 新建了一个副本。不能这样使用 Object.assign(state, { visibilityFilter: action.filter })，因为它会改变第一个参数的值。你必须把第一个参数设置为空对象。你也可以开启对ES7提案对象展开运算符的支持, 从而使用 { …state, …newState } 达到相同的目的。</p>
+</li>
+<li><p>在 default 情况下返回旧的 state。遇到未知的 action 时，一定要返回旧的 state。</p>
+</li>
+<li>在写reducer时候,注意store的数据结构</li>
+</ul>
+<h2 id="纯函数"><a href="#纯函数" class="headerlink" title="纯函数"></a>纯函数</h2><ul>
+<li>纯函数是指 不依赖于且不改变它作用域之外的变量状态的函数。</li>
+<li>也就是说， 纯函数的返回值只由它调用时的参数决定 ，它的执行不依赖于系统的状态（比如：何时、何处调用它）。</li>
+</ul>
+<p><img src="/img/ReduxFlow.png" alt=""></p>
+<h4 id="connect-mapStateToProps-mapDispatchToProps-mergeProps-options"><a href="#connect-mapStateToProps-mapDispatchToProps-mergeProps-options" class="headerlink" title="connect([mapStateToProps], [mapDispatchToProps], [mergeProps], [options])"></a>connect([mapStateToProps], [mapDispatchToProps], [mergeProps], [options])</h4><h4 id="mapStateToProps-state-ownProps-stateProps"><a href="#mapStateToProps-state-ownProps-stateProps" class="headerlink" title="[mapStateToProps(state, [ownProps]): stateProps]"></a>[mapStateToProps(state, [ownProps]): stateProps]</h4><ul>
+<li>(Function): 如果定义该参数，组件将会监听 Redux store 的变化。任何时候，只要 Redux store 发生改变，mapStateToProps 函数就会被调用。</li>
+<li>该回调函数必须返回一个纯对象，这个对象会与组件的 props 合并。</li>
+<li>如果你省略了这个参数，你的组件将不会监听 Redux store。</li>
+<li>如果指定了该回调函数中的第二个参数 ownProps，则该参数的值为传递到组件的 props，而且只要组件接收到新的 props，mapStateToProps 也会被调用（例如，当 props 接收到来自父组件一个小小的改动，那么你所使用的 ownProps 参数，mapStateToProps 都会被重新计算）。</li>
+</ul>
+<h4 id="mapDispatchToProps-dispatch-ownProps-dispatchProps"><a href="#mapDispatchToProps-dispatch-ownProps-dispatchProps" class="headerlink" title="[mapDispatchToProps(dispatch, [ownProps]): dispatchProps]"></a>[mapDispatchToProps(dispatch, [ownProps]): dispatchProps]</h4><ul>
+<li>(Object or Function): 如果传递的是一个对象，那么每个定义在该对象的函数都将被当作 Redux action creator，而且这个对象会与 Redux store 绑定在一起，其中所定义的方法名将作为属性名，合并到组件的 props 中。</li>
+<li>如果传递的是一个函数，该函数将接收一个 dispatch 函数，然后由你来决定如何返回一个对象，这个对象通过 dispatch 函数与 action creator 以某种方式绑定在一起（提示：你也许会用到 Redux 的辅助函数 bindActionCreators()）。</li>
+<li>如果你省略这个 mapDispatchToProps 参数，默认情况下，dispatch 会注入到你的组件 props 中。</li>
+<li>如果指定了该回调函数中第二个参数 ownProps，该参数的值为传递到组件的 props，而且只要组件接收到新 props，mapDispatchToProps 也会被调用。</li>
+</ul>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer></footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
